@@ -12,6 +12,21 @@ const buildApi = toolkit.create(TypeSafeApiHandler, {
     devMode: true
 });
 
+const EverythingValidationSchema = {
+    body: object({
+        foo: string([uuid('foo must be a UUID!')]),
+    }),
+    qsp: object({
+        hello: string(),
+    }),
+    cookies: object({
+        session: string('You need a session token!'),
+    }),
+    headers: object({
+        'x-my-header': string('You need the header: x-my-header!'),
+    }),
+}
+
 const routes = {
     products: ProductsVerbHandlers,
     login: LoginVerbHandlers,
@@ -27,6 +42,11 @@ const routes = {
                 foo: string([uuid()])
             }))}, async ({ validated }) => {
                 return { body: { foo: validated.qsp[0].foo } }
+            }),
+        },
+        everything: {
+            get: validate(EverythingValidationSchema, async ({ validated }) => {
+                return { body: { validated: validated } }
             }),
         }
     } 

@@ -1,0 +1,9 @@
+{
+  "search.exclude": {
+    "**/.sst": true
+  },
+  "cSpell.words": [
+    "rapidstack",
+    "valibot"
+  ]
+}

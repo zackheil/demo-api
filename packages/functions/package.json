@@ -1,0 +1,20 @@
+{
+  "name": "@oss-tb/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@rapidstack/lambda": "0.5.0-pr.e53562e",
+    "@types/aws-lambda": "^8.10.125",
+    "@types/node": "^20.8.9",
+    "sst": "^2.32.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "valibot": "^0.20.1"
+  }
+}

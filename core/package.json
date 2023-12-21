@@ -1,0 +1,20 @@
+{
+  "name": "@project/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./objects": "./src/objects/index.ts"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0",
+    "valibot": "~0.24.1",
+    "@rapidstack/lambda": "0.5.0-pr.78e8270"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.0"
+  }
+}

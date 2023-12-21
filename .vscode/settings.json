@@ -2,8 +2,36 @@
   "search.exclude": {
     "**/.sst": true
   },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "vsicons.associations.folders": [
+    { "icon": "src", "extensions": ["backend"], "format": "svg" },
+    { "icon": "plugin", "extensions": ["core"], "format": "svg" }
+  ],
   "cSpell.words": [
+    "certificatemanager",
+    "esbuild",
+    "Flickr",
+    "nodenext",
     "rapidstack",
+    "typecheck",
     "valibot"
-  ]
+  ],
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
 }

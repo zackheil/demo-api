@@ -1,24 +1,26 @@
 {
-  "name": "oss-tb",
+  "name": "@project/name",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "sst dev",
-    "build": "sst build",
-    "deploy": "sst deploy",
+    "typecheck": "tsc --noEmit",
+    "dev": "npm run typecheck && sst dev",
+    "build": "npm run typecheck && sst build",
+    "deploy": "npm run typecheck && sst deploy",
     "remove": "sst remove",
-    "console": "sst console",
-    "typecheck": "tsc --noEmit"
+    "console": "sst console"
   },
   "devDependencies": {
-    "sst": "^2.32.2",
-    "aws-cdk-lib": "2.101.1",
-    "constructs": "10.2.69",
+    "@tsconfig/node18": "1.0.1",
+    "aws-cdk-lib": "2.110.1",
+    "constructs": "10.3.0",
+    "sst": "2.38.7",
     "typescript": "^5.2.2",
-    "@tsconfig/node18": "^18.2.2"
+    "vitest": "0.28.4"
   },
   "workspaces": [
-    "packages/*"
+    "backend",
+    "core"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "@project/backend",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind 'vitest'",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.110"
+  },
+  "dependencies": {
+    "@faker-js/faker": "~8.3.1",
+    "@project/core": "workspace:*",
+    "@rapidstack/lambda": "0.5.0-pr.e86e315",
+    "@types/uuid": "^9.0.0",
+    "uuid": "^9.0.0"
+  }
+}

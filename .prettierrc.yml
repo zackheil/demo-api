@@ -1,0 +1,12 @@
+printWidth: 120
+bracketSpacing: true
+singleQuote: true
+semi: true
+overrides:
+  - files: "*.ts"
+    options:
+      tabWidth: 2
+  - files: "*.yml"
+    options:
+      tabWidth: 2
+      singleQuote: false

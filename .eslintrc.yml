@@ -1,0 +1,20 @@
+parser: "@typescript-eslint/parser"
+
+parserOptions:
+  sourceType: "module"
+  ecmaVersion: 2022
+
+ignorePatterns:
+  - "dist/*"
+  - "**/*.js"
+  - "**/*.d.ts"
+
+plugins:
+  - "deprecation"
+
+extends:
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:prettier/recommended"
+
+rules:
+  "deprecation/deprecation": "warn"

@@ -1,14 +1,4 @@
-import { SSTConfig } from "sst";
-import { main } from "./stacks/MyStack";
+import type { SSTConfig } from 'sst';
+import { ConfigManager as config, StackManager as stacks } from './aws/index.js';
 
-export default {
-  config(_input) {
-    return {
-      name: "oss-tb",
-      region: "us-east-1",
-    };
-  },
-  stacks(app) {
-    app.stack(main);
-  }
-} satisfies SSTConfig;
+export default { config, stacks } satisfies SSTConfig;

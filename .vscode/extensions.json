@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "hediet.vscode-drawio",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "vscode-icons-team.vscode-icons",
+    "styled-components.vscode-styled-components"
+  ]
+}
